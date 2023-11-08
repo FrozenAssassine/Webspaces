@@ -1,0 +1,23 @@
+.skillpage{
+    min-height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 50vw;
+    @media (max-width: 1000px) {max-width: 77%;}
+}
+.headline{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+}

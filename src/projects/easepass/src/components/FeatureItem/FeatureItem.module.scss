@@ -1,0 +1,26 @@
+.featureitem{
+    border: 2px solid gray;
+    border-radius: 1em;
+    padding: 2em;
+    width: 10em;
+    height: 5em;
+    box-shadow: 2px 2px 20px rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5em;
+    background-color: #120f27;
+}
+
+.headline{
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.content{
+    margin-top: 0.2em;
+    text-align: center;
+    font-size: 1em;
+    color: #b4b4b4;
+}

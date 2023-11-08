@@ -1,0 +1,71 @@
+.aboutPage{
+	min-height: 25vh;
+	text-align: center;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 10em;
+	background-color: #1f2130;
+}
+
+.headline{
+	margin-top: 4em;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+}
+
+.aboutIcons{
+	margin-top: 4em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.aboutIcon{
+	width: 5em;
+	height: 5em;
+}
+
+.githubInfo{
+	margin-top: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 2em;
+}
+
+.appname{
+	font-size: 2em;
+}
+
+.copyright{
+	font-size: 1.4em;
+	color: gray;
+    margin-bottom: 2em;
+}
+
+.githubInfoText{
+	width: 50%;
+	text-align: center;
+	font-size: 1.1em;
+	@media (min-width: 800px) { font-size: 1.4em; }
+
+}
+
+.imprint {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	*{
+		color: gray;
+	}
+}
+
+.icon{
+    width: 5em;
+    margin: 1em;
+	margin-top: 3em;
+}

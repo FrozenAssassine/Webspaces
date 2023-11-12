@@ -11,6 +11,14 @@
     user-select: none;
     margin: 0px;
     padding: 0px;
+    cursor: copy;
+  }
+
+  .infotext{
+    color: #888888;
+    position: absolute;
+    font-size: 1.2em;
+    top: 0;
   }
   
   .mainText{

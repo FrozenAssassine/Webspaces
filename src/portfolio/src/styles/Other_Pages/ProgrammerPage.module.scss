@@ -1,0 +1,60 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: "Consolas";
+    background: rgb(10, 1, 15);
+    margin: 0px;
+    padding: 0px;
+}
+.text{
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.white_text{
+    color: white;
+}
+.orange_text{
+    color: orange;
+    font-style: italic;
+}
+.headline{
+    line-height: 1em;
+    font-size: 5em;
+    margin: 0;
+}
+
+.pronounciation{
+    margin: 0;
+    font-size: 2.8em;
+    color: orange;
+}
+
+.onewho{
+    margin-top: 1.5em;
+    font-size: 2.8em;
+    text-align: left;
+}
+.seealso{
+    margin-top: 0.5em;
+    font-size: 1.9em;
+    text-align: left;
+}
+
+.bulletpoint{
+    margin-top: 0.5em;
+    line-height: 1em;
+    font-size: 1.8em;
+    color: orange;
+    text-align: left;
+}

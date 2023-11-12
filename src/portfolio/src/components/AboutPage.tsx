@@ -12,6 +12,15 @@ function AboutPage() {
             <AboutItem headline='Best Language' text='C#'/>
             <AboutItem headline='Best Framework' text='React'/>
         </div>
+        <div className={styles.donateview}>
+				<div className={styles.donatetext}>Support my work</div>
+				<a
+					className={styles.donatebutton}
+					href="https://www.paypal.com/donate?business=julius@frozenassassine.de&no_recurring=0&item_name=Support+FrozenAssassines+Work&currency_code=EUR"
+				>
+					Donate
+				</a>
+			</div>
     </div>
   );
 }

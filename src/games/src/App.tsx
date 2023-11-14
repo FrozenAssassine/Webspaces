@@ -1,5 +1,4 @@
-import React from 'react';
-import TicTacToe from './games/TicTacToe/TicTacToe';
+import TicTacToe from "./games/TicTacToe";
 
 function App() {
   return (

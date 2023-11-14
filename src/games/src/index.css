@@ -6,3 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root{
+  --accent1: rgb(195, 0, 255);
+  --accent2: rgb(0, 255, 30);
+  --background: #0b111e;
+}

@@ -59,7 +59,6 @@ const TicTacToe: React.FC = () => {
     const restart = () => {
       setHistory([{ squares: Array(9).fill(null) }]);
       setStepNumber(0);
-
     };    
 
     const handleClick = (i: number) => {
@@ -79,11 +78,10 @@ const TicTacToe: React.FC = () => {
         <div className={styles.wrapper}>
             <div className={styles.infobar}>
               {(!winner && stepNumber < 9) && (<div className={styles.infolabel}>{`Next player: ${xIsNext ? "X" : "O"}`}</div>)}
-              {winner && (<div className={styles.infolabel}>{`Winner: ${xIsNext ? "X" : "O"}`}</div>)}
-              {(!winner && stepNumber == 9) && (<div className={styles.infolabel}>{`No one wins`}</div>)}
-              {(winner || stepNumber <= 9) && (<div onClick={restart} className={styles.resetbutton}><Icon color="white" icon="material-symbols:restart-alt-rounded" /></div>)}
+              {winner && (<div className={styles.infolabel}>{`Winner: ${xIsNext ? "O" : "X"}`}</div>)}
+              {(!winner && stepNumber === 9) && (<div className={styles.infolabel}>{`No one wins`}</div>)}
+              {(winner != null || stepNumber === 9) && (<div onClick={restart} className={styles.resetbutton}><Icon color="white" icon="material-symbols:restart-alt-rounded" /></div>)}
             </div>
-            <div className={styles.headline}>Tic Tac Toe</div>
             <div className={styles.gameboard}>
                 <Board squares={current.squares} onClick={handleClick} />
             </div>

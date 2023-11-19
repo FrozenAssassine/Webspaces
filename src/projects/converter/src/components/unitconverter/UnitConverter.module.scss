@@ -1,0 +1,43 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebyside{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+.selectbox{
+    width: 200px;
+    margin-top: 1em;
+    background-color: black;
+    color: blue;
+}
+
+.valueinput{
+    border-radius: 4px;
+    outline: none;
+    font-size: 2em;
+    margin-top: 1em;
+    width: 200px;
+    border: transparent;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.topbottom{
+}
+
+.equals{
+    max-width: 200px;
+    color: white;
+    font-size: 3em;
+}

@@ -1,0 +1,33 @@
+.button{
+    min-width: 200px;
+    min-height: 200px;
+    width: max(30vw, 20vh);
+    height: max(30vw, 20vh);
+    max-width: 800px;
+    max-height: 800px;
+    font-size: clamp(12px, 3vw, 80px);
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+    cursor: pointer;
+    transition-duration: .3s;
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+  transform: scale(1.01);
+        box-shadow: 0 0 3em var(--accent3);
+    }
+}
+
+.image {
+    width: 80%;
+    height: 80%;
+    min-width: 150px;
+    min-height: 150px;
+}

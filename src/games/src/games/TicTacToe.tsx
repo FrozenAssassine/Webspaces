@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./TicTacToe.module.scss";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 
 type SquareValue = "X" | "O" | null;
 
@@ -57,9 +57,9 @@ const TicTacToe: React.FC = () => {
     const winner = calculateWinner(current.squares);
 
     const restart = () => {
-      setHistory([{ squares: Array(9).fill(null) }]);
-      setStepNumber(0);
-    };    
+        setHistory([{ squares: Array(9).fill(null) }]);
+        setStepNumber(0);
+    };
 
     const handleClick = (i: number) => {
         const newHistory = history.slice(0, stepNumber + 1);
@@ -76,11 +76,25 @@ const TicTacToe: React.FC = () => {
 
     return (
         <div className={styles.wrapper}>
+            <div className={styles.splashscreen}>
+                <div>
+                    <div className={styles.typewriter1}>Welcome to Tic Tac Toe</div>
+                </div>
+                <div>
+                    <div className={styles.typewriter2}>Happy Playing!</div>
+                </div>
+            </div>
             <div className={styles.infobar}>
-              {(!winner && stepNumber < 9) && (<div className={styles.infolabel}>{`Next player: ${xIsNext ? "X" : "O"}`}</div>)}
-              {winner && (<div className={styles.infolabel}>{`Winner: ${xIsNext ? "O" : "X"}`}</div>)}
-              {(!winner && stepNumber === 9) && (<div className={styles.infolabel}>{`No one wins`}</div>)}
-              {(winner != null || stepNumber === 9) && (<div onClick={restart} className={styles.resetbutton}><Icon color="white" icon="material-symbols:restart-alt-rounded" /></div>)}
+                {!winner && stepNumber < 9 && (
+                    <div className={styles.infolabel}>{`Next player: ${xIsNext ? "X" : "O"}`}</div>
+                )}
+                {winner && <div className={styles.infolabel}>{`Winner: ${xIsNext ? "O" : "X"}`}</div>}
+                {!winner && stepNumber === 9 && <div className={styles.infolabel}>{`No one wins`}</div>}
+                {(winner != null || stepNumber === 9) && (
+                    <div onClick={restart} className={styles.resetbutton}>
+                        <Icon color="white" icon="material-symbols:restart-alt-rounded" />
+                    </div>
+                )}
             </div>
             <div className={styles.gameboard}>
                 <Board squares={current.squares} onClick={handleClick} />

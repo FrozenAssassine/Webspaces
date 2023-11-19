@@ -5,14 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
 }
 
 :root{
-  --accent1: rgb(195, 0, 255);
-  --accent2: rgb(0, 255, 30);
-  --accent3: #202449;
+  --accent1: #880088;
+  --accent2: #202449;
   --background: #0b111e;
-
   /*404 Page colors*/
   --textColor1: rgb(195, 0, 255);
   --textColor2: rgb(0, 255, 30);

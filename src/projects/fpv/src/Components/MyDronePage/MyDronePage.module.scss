@@ -1,0 +1,19 @@
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.droneImage{
+    width: 50%;
+    height: auto;
+
+    &:hover{
+        
+    }
+}

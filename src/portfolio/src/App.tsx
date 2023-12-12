@@ -5,6 +5,7 @@ import SkillsPage from "./components/SkillsPage";
 import ProjectsPage from "./components/ProjectsPage";
 import AboutPage from "./components/AboutPage";
 import SidebarItem from "./components/SidebarItem";
+import OtherInterestsPage from "./components/OtherInterestsPage";
 
 function scrollTo(id: string) {
 	(document.getElementById(id) as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start" });
@@ -13,6 +14,7 @@ function scrollTo(id: string) {
 const scrollToHome = () => scrollTo("homePage");
 const scrollToSkills = () => scrollTo("skillsPage");
 const scrollToProjects = () => scrollTo("projectsPage");
+const scrollToInterests = () => scrollTo("otherInterestsPage");
 const scrollToAbout = () => scrollTo("aboutPage");
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
                     <SkillsPage />
                     <div id="projectsPage" className="headline textanimation">Projects</div>
                     <ProjectsPage />
+                    <div id="otherInterestsPage" className="headline textanimation">Other Interests</div>
+                    <OtherInterestsPage/>
                     <div id="aboutPage" className="headline textanimation">About Me</div>
                     <AboutPage />
                     <div className="imprint"><a  href="./assets/imprint.txt">Impressum/imprint</a></div>
@@ -40,6 +44,7 @@ function App() {
                     <SidebarItem onClick={scrollToHome} icon="material-symbols:home"/>
                     <SidebarItem onClick={scrollToSkills} icon="jam:tools" url="#skills"/>
                     <SidebarItem onClick={scrollToProjects} icon="material-symbols:list-alt-outline-rounded"/>
+                    <SidebarItem onClick={scrollToInterests} icon="icon-park-outline:drone"/>
                     <SidebarItem onClick={scrollToAbout} icon="material-symbols:info-outline-rounded"/>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import MyDronePage from "./Components/MyDronePage/MyDronePage";
 import TitlePage from "./Components/TitlePage/TitlePage";
+import VideosPage from "./Components/VideosPage/VideosPage";
 import './index.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className='pages'>
       <TitlePage/>
       <MyDronePage/>
+      <VideosPage/>
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function OtherInterestsPage(){
                         <a className={styles.dronevideo} href='https://www.youtube.com/watch?v=tSJ3QohvTxg'>
                             <img className={styles.dronevideoimage} src="./assets/droneVideo2.jpg"/>
                         </a>
-                        <a className={styles.dronevideo} href='https://www.youtube.com/watch?v=YnQ7j26eS3w'>
+                        <a className={styles.dronevideo} href='https://www.youtube.com/watch?v=unx09g7cS8M'>
                             <img className={styles.dronevideoimage} src="./assets/droneVideo1.jpg"/>
                         </a>
                     </div>

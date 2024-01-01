@@ -10,6 +10,7 @@ import InvisibleCharacter from './components/InvisibleCharacter';
 import InspirePage from './components/Other_Pages/InspirePage';
 import ProgrammerPage from './components/Other_Pages/ProgrammerPage';
 import RomanticPage from './components/Other_Pages/RomanticPage';
+import ExternalNavPage from './components/Other_Pages/ExternalNavPage';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,14 @@ const router = createBrowserRouter([
   {
     path: "/romantic",
     element: (<RomanticPage/>)
+  },
+  {
+    path: "/git",
+    element: (<ExternalNavPage page='https://github.com/frozenassassine'/>)
+  },
+  {
+    path: "/insta",
+    element: (<ExternalNavPage page='https://instagram.com/frozenassassine'/>)
   }
 ]);
 createRoot(document.getElementById("root") as HTMLElement).render(

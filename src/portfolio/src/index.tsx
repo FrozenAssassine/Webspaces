@@ -11,6 +11,7 @@ import InspirePage from './components/Other_Pages/InspirePage';
 import ProgrammerPage from './components/Other_Pages/ProgrammerPage';
 import RomanticPage from './components/Other_Pages/RomanticPage';
 import ExternalNavPage from './components/Other_Pages/ExternalNavPage';
+import TimePage from './components/Other_Pages/TimePage';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/insta",
     element: (<ExternalNavPage page='https://instagram.com/frozenassassine'/>)
+  },
+  {
+    path: "/time",
+    element: (<TimePage/>)
   }
 ]);
 createRoot(document.getElementById("root") as HTMLElement).render(

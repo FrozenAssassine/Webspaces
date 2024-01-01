@@ -20,7 +20,7 @@ const scrollToAbout = () => scrollTo("aboutPage");
 function App() {
     return (
         <div className="appstyle">
-            <div className="wrapper">
+                <div className="wrapper">
                 <div className="sidebar-left">
                     <SidebarItem icon="mdi:github" url="https://github.com/FrozenAssassine"/>
                     <SidebarItem icon="mdi:instagram" url="https://www.instagram.com/frozenassassine/"/>

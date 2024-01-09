@@ -11,6 +11,8 @@ import InspirePage from './components/Other_Pages/InspirePage';
 import ProgrammerPage from './components/Other_Pages/ProgrammerPage';
 import RomanticPage from './components/Other_Pages/RomanticPage';
 import TimePage from './components/Other_Pages/TimePage';
+import TimeToSilvester from './components/Other_Pages/TimeToSilvester';
+import NavigateToPage from './components/Other_Pages/NavigateToPage';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,19 @@ const router = createBrowserRouter([
   {
     path: "/time",
     element: (<TimePage/>)
+  },
+  {
+    path: "/timeleft",
+    element: (<TimeToSilvester/>)
+  },
+  {
+    path: "/git",
+    element: (<NavigateToPage url='https://github.com/frozenassassine'/>)
+  },
+  
+  {
+    path: "/insta",
+    element: (<NavigateToPage url='https://instagram.com/frozenassassine'/>)
   }
 ]);
 createRoot(document.getElementById("root") as HTMLElement).render(

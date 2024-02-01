@@ -1,0 +1,62 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top{
+    text-align: center;
+    position: absolute;
+    top: 5%;
+}
+
+.headline{
+    font-size: 2.5em;
+}
+
+.subheadline{
+    font-size: 1.2em;
+    color: rgb(150, 150, 150);
+}
+
+.centered{
+    font-size: 1.5em;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2em;
+}
+
+.codebox{
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.code{
+    font-size: 1.3em;
+    display: inline-flex;
+    font-family: "Consolas";
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+.yellow{
+    color: yellow;
+}

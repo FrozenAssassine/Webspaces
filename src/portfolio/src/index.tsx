@@ -14,6 +14,7 @@ import ExternalNavPage from './components/Other_Pages/ExternalNavPage';
 import TimePage from './components/Other_Pages/TimePage';
 import TimeToSilvester from './components/Other_Pages/TimeToSilvester';
 import NavigateToPage from './components/Other_Pages/NavigateToPage';
+import HowToCenterDivPage from './components/Other_Pages/HowToCenterDivPage';
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
   {
     path: "/insta",
     element: (<NavigateToPage url='https://instagram.com/frozenassassine'/>)
+  },
+  
+  {
+    path: "/centerdiv",
+    element: (<HowToCenterDivPage/>)
   }
 ]);
 createRoot(document.getElementById("root") as HTMLElement).render(

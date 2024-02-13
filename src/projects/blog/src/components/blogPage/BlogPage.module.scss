@@ -1,5 +1,5 @@
 .blogPage{
-    width: 100%;
+    width: 90%;
     min-height: 100%;
     display: flex;
     align-items: flex-start;
@@ -15,4 +15,5 @@
 .subheadline{
     font-size: 1.5em;
     color: var(--lighttextcolor);
+    margin-bottom: 50px;
 }

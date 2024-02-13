@@ -4,7 +4,9 @@
     justify-content: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .top{
@@ -31,32 +33,59 @@
 }
 
 .codebox{
+    margin: 0.5em;
     display: flex;
-    position: absolute;
     bottom: 10%;
     align-items: center;
     justify-content: flex-start;
-    flex-direction: row;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2em;
+    padding-top: 1em;
+}
+
+.codeHeadline{
+    font-size: 1.2em;
+    width: 100%;
+    margin-bottom: 1em;
+    color: gray;
 }
 
 .code{
     font-size: 1.3em;
     display: inline-flex;
     font-family: "Consolas";
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 2em;
+}
+.codeVertical{
+    font-size: 1.3em;
+    font-family: "Consolas";
+    display: flex;
+    flex-direction: column;
 }
 
 .red{
     color: red;
 }
 .blue{
-    color: blue;
+    color: rgb(0, 119, 255);
 }
 .green{
     color: green;
 }
 .yellow{
     color: yellow;
+}
+
+.codeboxes {
+    bottom: -20%;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.inline{
+    white-space:pre;
+    display: inline-flex;
 }

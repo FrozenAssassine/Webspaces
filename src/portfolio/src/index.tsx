@@ -15,6 +15,7 @@ import TimePage from './components/Other_Pages/TimePage';
 import TimeToSilvester from './components/Other_Pages/TimeToSilvester';
 import NavigateToPage from './components/Other_Pages/NavigateToPage';
 import HowToCenterDivPage from './components/Other_Pages/HowToCenterDivPage';
+import SocialPage from './components/Other_Pages/SocialPage';
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
   {
     path: "/centerdiv",
     element: (<HowToCenterDivPage/>)
+  },
+  {
+    path: "/social",
+    element: (<SocialPage/>)
   }
 ]);
 createRoot(document.getElementById("root") as HTMLElement).render(

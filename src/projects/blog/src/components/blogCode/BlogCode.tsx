@@ -8,10 +8,12 @@ type Props = {
 };
 
 export default function BlogCode(props: Props) {
+    const codeToDisplay = Array.isArray(props.code) ? props.code.join("\n") : props.code;
+
     return (
         <div className={styles.wrapper}>
-            <SyntaxHighlighter line style={atomDark} language={props.language}>
-                {props.code}
+            <SyntaxHighlighter style={atomDark} language={props.language}>
+                {codeToDisplay}
             </SyntaxHighlighter>
         </div>
     );

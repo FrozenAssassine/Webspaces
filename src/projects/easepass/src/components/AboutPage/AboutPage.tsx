@@ -4,7 +4,7 @@ import styles from "./AboutPage.module.scss";
 export default function AboutPage() {
 	return (
 		<div id="aboutPage" className={styles.aboutPage}>
-			<div className={styles.headline}>About</div>
+			<div className={`${styles.headline} textanimation`}>About</div>
 			<div className={styles.githubInfo}>
 				<a href="https://github.com/FrozenAssassine/easepass">
 					<Icon className={styles.aboutIcon} color="white" icon="bi:github" />
@@ -16,7 +16,7 @@ export default function AboutPage() {
 			<div>
                 <img className={styles.icon} src="./assets/icon.png"/>
 				<div className={styles.appname}>Ease Pass</div>
-				<div className={styles.copyright}>Copyright © 2023, Julius Kirsch</div>
+				<div className={styles.copyright}>Copyright © 2023-2024, Julius Kirsch</div>
 			</div>
 			<div className={styles.imprint}>
 				<a href="./assets/imprint.txt">Impressum/imprint</a>

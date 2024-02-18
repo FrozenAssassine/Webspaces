@@ -1,4 +1,4 @@
-.homepage{
+.homepage {
     min-height: 100vh;
     width: 100vw;
     display: flex;
@@ -7,47 +7,65 @@
     flex-direction: column;
 }
 
-.image{
-    margin-top: 4em;
+.image {
+    margin-top: clamp(50px, 20vh, 200px);
     width: 80%;
     max-width: 1200px;
     min-width: 200px;
     height: auto;
-    border-radius: 0.3em;
-    @media (min-width: 1200px) { width: 60%;}
-    @media (max-width: 1200px) { width: 80%;}
-    @media (max-width: 800px) { width: 90%;}
+    border-radius: 10px;
+    box-shadow: 0 0 3em var(--accent2);
+    @media (min-width: 1200px) {
+        width: 60%;
+    }
+    @media (max-width: 1200px) {
+        width: 80%;
+    }
+    @media (max-width: 800px) {
+        width: 90%;
+    }
 }
 
 .headline{
-    font-size: 3em;
-    @media (max-width: 500px) { font-size: 2em;}
+    font-size: 4em;
+    text-align: center;  
 }
 
-.subheadline{   
+.subheadline {
+    text-align: center;
     font-size: 1.1em;
     width: 70%;
     color: rgb(154, 154, 154);
-    text-align: center;
     max-width: 1000px;
-    @media (max-width: 800px) { font-size: 1em; width: 87%;}
-    @media (max-width: 500px) { font-size: 0.8em; width: 95%;}
+    @media (max-width: 800px) {
+        font-size: 1em;
+        width: 87%;
+    }
+    @media (max-width: 500px) {
+        font-size: 0.8em;
+        width: 95%;
+    }
 }
 
-.buttons{
+.buttons {
     margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-
 }
 
-.icon{
-    margin-top: 10em;
+.icon {
     width: 10%;
     margin-bottom: 5%;
-    @media (max-width: 1500px) { width: 15%;}
-    @media (max-width: 1200px) { width: 20%;}
-    @media (max-width: 800px) { width: 30%;}
+    margin-top: clamp(10px, 5vh, 100px);
+    @media (max-width: 1500px) {
+        width: 15%;
+    }
+    @media (max-width: 1200px) {
+        width: 20%;
+    }
+    @media (max-width: 800px) {
+        width: 30%;
+    }
 }

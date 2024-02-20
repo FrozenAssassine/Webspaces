@@ -1,16 +1,19 @@
-import styles from './Button1.module.scss';
+import { Icon } from "@iconify/react";
+import styles from "./Button1.module.scss";
 
 type Props = {
-    text: string,
-    accent?: boolean,
-    href?: string
-}
+    text: string;
+    icon: string;
+    accent?: boolean;
+    href?: string;
+};
 
-export default function Button1(props: Props){
-    const buttonClassName = `${styles.button} ${props.accent ? styles.accent : ''}`;
+export default function Button1(props: Props) {
+    const buttonClassName = `${styles.button} ${props.accent ? styles.accent : ""}`;
     return (
         <a href={props.href} className={buttonClassName}>
-            {props.text}
+            <div>{props.text}</div>
+            <Icon className={styles.icon} icon={props.icon} color="white" />
         </a>
     );
 }

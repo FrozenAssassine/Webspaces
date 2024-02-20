@@ -4,12 +4,12 @@ import styles from "./GalleryPage.module.scss";
 import React, { useState, useEffect  } from 'react';
 
 const images = [
-    '/assets/linenumbers.png',
-    '/assets/quickAccess.png',
-    '/assets/secondaryInstance.png',
-    '/assets/designs.png',
-    '/assets/syntaxhighlighting.png',
-    '/assets/tabs.png',
+    '/assets/screen1.png',
+    '/assets/screen2.png',
+    '/assets/screen3.png',
+    '/assets/screen4.png',
+    '/assets/screen5.png',
+    '/assets/screen6.png',
 ];
 
 export default function GalleryPage() {
@@ -31,7 +31,7 @@ export default function GalleryPage() {
 
     return (
         <div className={styles.gallerypage}>
-            <div className={styles.headline}>Gallery</div>
+            <div className={`${styles.headline} textanimation`}>Gallery</div>
             <ImageGrid images={images} onImageClick={handleImageClick} />
             {selectedImageIndex !== null && (
                 <ImageModal

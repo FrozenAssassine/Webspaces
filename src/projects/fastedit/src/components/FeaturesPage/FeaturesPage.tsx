@@ -4,7 +4,7 @@ import styles from './FeaturesPage.module.scss';
 export default function FeaturesPage() {
     return (
         <div className={styles.featurespage}>
-            <div className={styles.headline}>Features</div>
+            <div className={`${styles.headline} textanimation`}>Features</div>
             <div className={styles.featureItems}>
                 <FeatureItem headline='Syntax highlighting' content='Enhance your code with syntax highlighting for improved readability and clarity.'/>
                 <FeatureItem headline='Tabs' content='Efficiently navigate your code or documents using tabs.'/>

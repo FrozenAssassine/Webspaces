@@ -1,0 +1,23 @@
+.gallerypage{
+    margin-top: 10em;
+    min-height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headline{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.imageitems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+}

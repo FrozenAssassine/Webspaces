@@ -1,0 +1,28 @@
+.imageModal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.closebutton{
+    font-size: 5em;
+    position: fixed;
+    margin: 20px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.image{
+    width: 50%;
+    @media (max-width: 2200px) { width: 60%;}
+    @media (max-width: 1800px) { width: 70%;}
+    @media (max-width: 1500px) { width: 90%;}
+    height: auto;
+}

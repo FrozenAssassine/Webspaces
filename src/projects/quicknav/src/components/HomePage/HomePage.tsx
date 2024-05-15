@@ -8,7 +8,7 @@ export default function HomePage(){
             <div  className={`${styles.headline} textanimation`}>QuickNav</div>
             <div className={styles.subheadline}>Simplifying Windows multitasking with a keystroke</div>
             <div className={styles.buttons}>
-                <Button1 text='Download' accent={true} href="URL" icon='fluent:store-microsoft-16-filled'/>
+                <Button1 text='Download' accent={true} href="https://apps.microsoft.com/detail/QuickNav/9N8KBW01WD62?launch=true&mode=mini" icon='fluent:store-microsoft-16-filled'/>
                 <Button1 text='Github' href='https://www.github.com/FrozenAssassine/quicknav' icon="mdi:github" />
             </div>
             <img className={styles.image} src="./assets/banner.png"/>

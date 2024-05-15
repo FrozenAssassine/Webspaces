@@ -1,0 +1,29 @@
+.timepage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    cursor: none;
+}
+
+.time{
+    text-shadow: 0 0 8px rgb(255, 0, 255), 0 0 16px rgb(255, 0, 255), 0 0 32px rgb(255, 0, 255),0 0 64px rgb(255, 0, 255), 0 0 256px rgb(255, 0, 255), 0 0 512px rgb(255, 0, 255);
+    @media (min-width: 1200px) { font-size: 180px; }
+    @media (max-width: 1200px) { font-size: 120px; }
+    @media (max-width: 800px) { font-size: 80px; }
+    @media (max-width: 500px) { font-size: 60px; }
+    font-family: 'Consolas'; 
+}
+
+.date{
+    text-shadow: 0 0 8px #00b3ff, 0 0 16px #00b3ff, 0 0 32px #00b3ff,0 0 64px #00b3ff, 0 0 256px #00b3ff, 0 0 512px #00b3ff;
+    @media (min-width: 1200px) { font-size: 90px; }
+    @media (max-width: 1200px) { font-size: 60px; }
+    @media (max-width: 800px) { font-size: 40px; }
+    @media (max-width: 500px) { font-size: 30px; }
+    font-family: 'Consolas'; 
+}

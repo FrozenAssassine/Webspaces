@@ -1,11 +1,11 @@
 import React from "react";
-import Homepage from "./components/HomePage";
-import "./styles/App.scss";
-import SkillsPage from "./components/SkillsPage";
-import ProjectsPage from "./components/ProjectsPage";
-import AboutPage from "./components/AboutPage";
-import SidebarItem from "./components/SidebarItem";
-import OtherInterestsPage from "./components/OtherInterestsPage";
+import Homepage from "./pages/HomePage/HomePage";
+import "./App.scss";
+import SkillsPage from "./pages/SkillsPage/SkillsPage";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import SidebarItem from "./components/SidebarItem/SidebarItem";
+import OtherInterestsPage from "./pages/OtherInterestsPage/OtherInterestsPage";
 
 function scrollTo(id: string) {
 	(document.getElementById(id) as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start" });

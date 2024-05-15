@@ -5,17 +5,17 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import NotFound404 from './components/NotFound404';
-import InvisibleCharacter from './components/InvisibleCharacter';
-import InspirePage from './components/Other_Pages/InspirePage';
-import ProgrammerPage from './components/Other_Pages/ProgrammerPage';
-import RomanticPage from './components/Other_Pages/RomanticPage';
-import ExternalNavPage from './components/Other_Pages/ExternalNavPage';
-import TimePage from './components/Other_Pages/TimePage';
-import TimeToSilvester from './components/Other_Pages/TimeToSilvester';
-import NavigateToPage from './components/Other_Pages/NavigateToPage';
-import HowToCenterDivPage from './components/Other_Pages/HowToCenterDivPage';
-import SocialPage from './components/Other_Pages/SocialPage';
+import NotFound404 from './pages/NotFound404Page/NotFound404';
+import InvisibleCharacter from './pages/Other_Pages/InvisibleCharacterPage/InvisibleCharacter';
+import InspirePage from './pages/Other_Pages/InspirePage/InspirePage';
+import ProgrammerPage from './pages/Other_Pages/ProgrammerPage/ProgrammerPage';
+import RomanticPage from './pages/Other_Pages/RomanticPage/RomanticPage';
+import ExternalNavPage from './pages/Other_Pages/ExternalNavPage/ExternalNavPage';
+import TimePage from './pages/Other_Pages/TimePage/TimePage';
+import TimeToSilvester from './pages/Other_Pages/TimeToSilvesterPage/TimeToSilvester';
+import NavigateToPage from './pages/Other_Pages/NavigateToPage/NavigateToPage';
+import HowToCenterDivPage from './pages/Other_Pages/HowToCenterDivPage/HowToCenterDivPage';
+import SocialPage from './pages/Other_Pages/SocialPage/SocialPage';
 
 const router = createBrowserRouter([
   {

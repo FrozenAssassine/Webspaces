@@ -1,0 +1,77 @@
+.skillitem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 9em;
+    height: 9em;
+    margin: 0.5em;
+    background-color: var(--accent2);
+    border-radius: 1em;
+    user-select: none;
+    transition-duration: 300ms;
+    border: 0.2em solid var(--accent2);
+    box-shadow: 0 0 1em var(--accent2);
+    background-color: rgb(32, 32, 32);
+
+    &:hover {
+        box-shadow: 0 0 2em 1em var(--accent2);
+    }
+
+    @media (max-width: 600px) {
+        width: 7em;
+        height: 7em;
+    }
+
+    &:hover .hovertext {
+        opacity: 1;
+        margin-bottom: 0em;
+    }
+
+    & .hovertext {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        height: 3em;
+        text-align: center;
+        transition-duration: 0.4s;
+        font-size: 0.8em;
+        opacity: 0;
+        margin-bottom: -4em;
+        @media (max-width: 600px) {
+            font-size: 0.7em;
+        }
+    }
+
+    &:hover .icon {
+        margin-top: -4em;
+        background-color: rgb(32, 32, 32);
+        border-radius: 0.5em 0.5em 0 0;
+        padding: 0.5em;
+    }
+    &:hover .headline {
+        font-size: 1.3em;
+        @media (max-width: 600px) {
+            font-size: 1em;
+        }
+    }
+}
+
+.icon {
+    transition-duration: 0.4s;
+    opacity: 1;
+    width: 3em;
+    height: 3em;
+    @media (max-width: 600px) {
+        width: 2em;
+        height: 2em;
+    }
+}
+
+.headline {
+    transition-duration: 300ms;
+    margin-top: 0.5em;
+    font-size: 1.1em;
+    @media (max-width: 600px) {
+        font-size: 1em;
+    }
+}

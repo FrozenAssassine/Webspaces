@@ -16,7 +16,7 @@ export default function AboutPage() {
 			<div>
                 <img className={styles.icon} src="./assets/icon.png"/>
 				<div className={styles.appname}>Ease Pass</div>
-				<div className={styles.copyright}>Copyright © 2023-2024, <a className={styles.link} href="https://frozenassassine.de">Julius Kirsch</a></div>
+				<div className={styles.copyright}>Copyright © 2023-2024, <a className={styles.link} href="https://frozenassassine.de">Julius Kirsch</a>{'; '}<a className={styles.link} href="https://finnfreitag.com">Finn Freitag</a></div>
 			</div>
 			<div className={styles.imprint}>
 				<a href="./assets/imprint.txt">Impressum/imprint</a>

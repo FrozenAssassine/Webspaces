@@ -13,8 +13,9 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 
-    --accent1: #880088;
-    --accent2: #202449;
+    --accent1: #b700ff;
+    --accent2: #13a9ff;
+    --accentdark: #202449;
     --background: #0b111e;
     /*404 Page colors*/
     --textColor1: rgb(195, 0, 255);

@@ -26,13 +26,18 @@
     color: rgb(160, 160, 160);
 }
 
-.friendlist{
+.friendslist{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2em;
+   
+    @media (max-width: 900px){flex-direction: column;}
 }
 
-.frienditem{
-    width: 200px;
-    height: 200px;
+.friendsheadline{
+    font-size: 2.5em;
+
+    @media (max-width: 800px){font-size: 1.6em;}
+    margin-top: 10%;
 }

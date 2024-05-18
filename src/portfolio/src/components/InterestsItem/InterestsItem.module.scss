@@ -9,8 +9,8 @@
     margin: 3em;
     max-width: 1300px;
     transition-duration: 300ms;
-    box-shadow: 0 0 3em var(--accent2);
-    border: 0.3em solid var(--accent2);
+    box-shadow: 0 0 3em var(--accentdark);
+    border: 0.3em solid var(--accentdark);
     text-decoration: none;
     color: white;
 
@@ -71,7 +71,7 @@
     @media (max-width: 800px) { margin: 0.2em; font-size: 0.8em; }
 
     &:hover{
-        background-image: linear-gradient(-225deg, #13a9ff 0%, #b700ff 50%, #13a9ff 90%);
+        background-image: linear-gradient(-225deg, var(--accent2) 0%, var(--accent1) 50%, var(--accent2) 90%);
         background-size: auto auto;
         background-clip: border-box;
         background-size: 200% auto;

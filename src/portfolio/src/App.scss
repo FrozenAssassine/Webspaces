@@ -24,7 +24,7 @@
 }
 
 .textanimation{
-    background-image: linear-gradient(-225deg, #13a9ff 0%, #b700ff 50%, #13a9ff 90%);
+    background-image: linear-gradient(-225deg, var(--accent2) 0%, var(--accent1) 50%, var(--accent2) 90%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;

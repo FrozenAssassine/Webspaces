@@ -7,7 +7,7 @@ export default function OtherInterestsPage(){
             <InterestsItem 
                 name='FPV Drones'
                 image='./assets/fpv_drone.jpg'
-                text="One of my passions is flying FPV drones. It's an incredible feeling of freedom, just floating through the sky without a care in the world."
+                text="One of my passions is flying FPV drones. It's an incredible feeling of freedom from the moment you put on your FPV goggles. Hard to describe but incredible."
                 buttons={[
                     { text: "Youtube", url: "https://youtube.com/@DroneVentureFPV", icon: "bi:youtube" },
                     { text: "Instagram", url: "https://instagram.com/droneventurefpv", icon: "bi:instagram" }

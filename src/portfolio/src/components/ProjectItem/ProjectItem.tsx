@@ -8,23 +8,34 @@ type Props = {
     content: string;
     buttons: { text: string; url: string, icon: string }[];
     tags: string[];
+    authors?: {name: string, url: string}[];
 };
 
-function ProjectItem({ headline, imageURL, content, buttons, tags }: Props) {
+function ProjectItem({ headline, imageURL, content, buttons, tags, authors }: Props) {
     return (
         <div className={styles.projectitem}>
             <div className={styles.title}>{headline}</div>
+            {authors !== undefined && 
+                <div className={styles.authors}>
+                    Authors: 
+                    {authors.map((value, index) => {
+                        return <a key={index} href={value.url} className={styles.author}>{value.name}</a>;
+                })}
+                </div>
+            }
+            <img src={imageURL} className={styles.image} />
+
             <div className={styles.tags}>
                 {tags.map((value, index) => {
-                    return <div className={styles.tag}>{value}</div>;
+                    return <div key={index} className={styles.tag}>{value}</div>;
                 })}
             </div>
-            <img src={imageURL} className={styles.image} />
+
             <div className={styles.content}>{content}</div>
             <div className={styles.buttons}>
                 {buttons.map((value, index) => {
                     return (
-                        <a href={value.url} className={styles.button}>
+                        <a key={index} href={value.url} className={styles.button}>
                             <div>{value.text}</div>
                             <Icon className={styles.icon} icon={value.icon} color="white"/>
                         </a>

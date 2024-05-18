@@ -6,6 +6,41 @@ function ProjectsPage() {
     return (
         <div className={styles.projectspage}>
             <ProjectItem
+                headline="QuickNav"
+                content="QuickNav is a powerful Windows tool that simplifies multitasking with just a keystroke. By pressing Windows + Y, a search window pops up, allowing users to perform various tasks such as searching the web, finding files, running commands, calculate, get file information, create timers, and much more. It aims to make using Windows more powerful and efficient. Through this project I leanred how to intereact with windows apis, such as file search and get system informations and much more."
+                imageURL="./assets/quicknav.png"
+                buttons={[
+                    {
+                        text: "Github",
+                        url: "https://github.com/FrozenAssassine/QuickNav",
+                        icon: "mdi:github",
+                    },
+                    { text: "Website", url: "http://quicknav.frozenassassine.de/", icon: "iconoir:internet" },
+                ]}
+                tags={["C#", "WinUI3", "Windows"]}
+                authors={[{name: "Finn Freitag", url: "https://finnfreitag.com"}, {name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
+            ></ProjectItem>
+                        <ProjectItem
+                headline="Ease Pass"
+                content="Ease Pass is a simple password manager designed to streamline password management. With this application, you can conveniently store, edit, and organize your passwords securely. The project is a work in progress, focusing on providing a user-friendly interface to save and manage passwords, and future enhancements are underway to further enhance its capabilities. Through this project, I learned about secure data management and encryption techniques."
+                imageURL="./assets/easepass_banner.png"
+                buttons={[
+                    {
+                        text: "Github",
+                        url: "https://github.com/FrozenAssassine/easepass",
+                        icon: "mdi:github",
+                    },
+                    { text: "Website", url: "http://easepass.frozenassassine.de/", icon: "iconoir:internet" },
+                    {
+                        text: "Store",
+                        url: "https://apps.microsoft.com/store/detail/ease-pass/9NQPF80923F5?hl=en-us&gl=us&ocid=pdpshare",
+                        icon: "fluent:store-microsoft-16-filled",
+                    },
+                ]}
+                authors={[{name: "Finn Freitag", url: "https://finnfreitag.com"}, {name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
+                tags={["C#", "WINUI3"]}
+            ></ProjectItem>
+            <ProjectItem
                 headline="Fastedit"
                 content="Fastedit is designed to make editing and organizing your documents effortless. With the ability to open multiple tabs, multiple documents can be easily edited or viewed at once. Line numbering and custom designs are also featured to personalize your experience. Your work is saved and opens up exactly as you left it with the session snapshot feature. Additionally, editing code is made easy with syntax highlighting. Plus, important work is never lost with the ability to recover deleted files from the recycle bin. It uses TextControlBox as its core component. Through this project I learned how to handle a large codebase and how to stay patient even when I had to face many problems."
                 imageURL="./assets/fastedit_banner.jpg"
@@ -18,26 +53,8 @@ function ProjectsPage() {
                         icon: "fluent:store-microsoft-16-filled",
                     },
                 ]}
+                authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
                 tags={["C#", "UWP"]}
-            ></ProjectItem>
-            <ProjectItem
-                headline="Ease Pass"
-                content="Ease Pass is a simple password manager designed to streamline password management. With this application, you can conveniently store, edit, and organize your passwords securely. The project is a work in progress, focusing on providing a user-friendly interface to save and manage passwords, and future enhancements are underway to further enhance its capabilities. Through this project, I learned about secure data management and encryption techniques."
-                imageURL="./assets/easepass_banner.png"
-                buttons={[
-                    {
-                        text: "Github",
-                        url: "https://github.com/FrozenAssassine/easepass",
-                        icon: "mdi:github",
-                    },
-                    { text: "Website", url: "http://easepass.frozenassassine.de/", icon: "iconoir:internet" },
-                                        {
-                        text: "Store",
-                        url: "https://apps.microsoft.com/store/detail/ease-pass/9NQPF80923F5?hl=en-us&gl=us&ocid=pdpshare",
-                        icon: "fluent:store-microsoft-16-filled",
-                    },
-                ]}
-                tags={["C#", "WINUI3"]}
             ></ProjectItem>
             <ProjectItem
                 headline="TextControlBox"
@@ -55,6 +72,7 @@ function ProjectsPage() {
                         icon: "mdi:github",
                     },
                 ]}
+                authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
                 tags={["C#", "UWP"]}
             ></ProjectItem>
             <ProjectItem
@@ -64,6 +82,7 @@ function ProjectsPage() {
                 buttons={[
                     { text: "Github", url: "https://github.com/FrozenAssassine/VoiceAssistant", icon: "mdi:github" },
                 ]}
+                authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
                 tags={["Python", "Neuronal Network"]}
             ></ProjectItem>
             <ProjectItem
@@ -77,7 +96,8 @@ function ProjectsPage() {
                         icon: "mdi:github",
                     },
                 ]}
-                tags={["C#", "Console"]}
+                authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
+                tags={["C#", "Console", "Programming language"]}
             ></ProjectItem>
         </div>
     );

@@ -9,8 +9,8 @@
     border-radius: 1em;
     user-select: none;
     transition-duration: 300ms;
-    border: 0.2em solid var(--accent2);
-    box-shadow: 0 0 1em var(--accent2);
+    border: 0.2em solid var(--accentdark);
+    box-shadow: 0 0 1em var(--accentdark);
     background-color: rgb(32, 32, 32);
 
     @media (max-width: 480px) { width: 12em; height: 7em;}

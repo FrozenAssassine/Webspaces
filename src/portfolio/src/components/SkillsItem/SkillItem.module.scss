@@ -6,16 +6,17 @@
     width: 9em;
     height: 9em;
     margin: 0.5em;
-    background-color: var(--accent2);
+    background-color: var(--accentdark);
     border-radius: 1em;
     user-select: none;
-    transition-duration: 300ms;
-    border: 0.2em solid var(--accent2);
-    box-shadow: 0 0 1em var(--accent2);
+    transition-duration: .3s;
+    border: 0.2em solid var(--accentdark);
+    box-shadow: 0 0 1em var(--accentdark);
     background-color: rgb(32, 32, 32);
 
     &:hover {
-        box-shadow: 0 0 2em 1em var(--accent2);
+        box-shadow: 0 0 2em 1em var(--accentdark);
+        border: 0.2em solid var(--accent1);
     }
 
     @media (max-width: 600px) {
@@ -33,10 +34,10 @@
         margin-right: 0.5em;
         height: 3em;
         text-align: center;
-        transition-duration: 0.4s;
-        font-size: 0.8em;
         opacity: 0;
         margin-bottom: -4em;
+        font-size: 0.8em;
+        transition-duration: 0.3s;
         @media (max-width: 600px) {
             font-size: 0.7em;
         }
@@ -50,6 +51,7 @@
     }
     &:hover .headline {
         font-size: 1.3em;
+        transition-duration: .3s;
         @media (max-width: 600px) {
             font-size: 1em;
         }

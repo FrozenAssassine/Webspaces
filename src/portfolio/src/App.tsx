@@ -11,12 +11,6 @@ function scrollTo(id: string) {
 	(document.getElementById(id) as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-const scrollToHome = () => scrollTo("homePage");
-const scrollToSkills = () => scrollTo("skillsPage");
-const scrollToProjects = () => scrollTo("projectsPage");
-const scrollToInterests = () => scrollTo("otherInterestsPage");
-const scrollToAbout = () => scrollTo("aboutPage");
-
 function App() {
     return (
         <div className="appstyle">
@@ -41,11 +35,11 @@ function App() {
                 </div>
                 <div className="sidebar-right">
                     <div className="separator" />
-                    <SidebarItem onClick={scrollToHome} icon="material-symbols:home"/>
-                    <SidebarItem onClick={scrollToSkills} icon="jam:tools" url="#skills"/>
-                    <SidebarItem onClick={scrollToProjects} icon="material-symbols:list-alt-outline-rounded"/>
-                    <SidebarItem onClick={scrollToInterests} icon="icon-park-outline:drone"/>
-                    <SidebarItem onClick={scrollToAbout} icon="material-symbols:info-outline-rounded"/>
+                    <SidebarItem onClick={() => scrollTo("homePage")} icon="material-symbols:home"/>
+                    <SidebarItem onClick={() => scrollTo("skillsPage")} icon="jam:tools"/>
+                    <SidebarItem onClick={() => scrollTo("projectsPage")} icon="material-symbols:list-alt-outline-rounded"/>
+                    <SidebarItem onClick={() => scrollTo("otherInterestsPage")} icon="ph:drone-fill"/>
+                    <SidebarItem onClick={() => scrollTo("aboutPage")} icon="material-symbols:info-outline-rounded"/>
                 </div>
             </div>
         </div>

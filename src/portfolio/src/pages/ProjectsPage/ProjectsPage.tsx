@@ -11,6 +11,11 @@ function ProjectsPage() {
                 imageURL="./assets/quicknav.png"
                 buttons={[
                     {
+                        text: "Store",
+                        url: "https://apps.microsoft.com/detail/QuickNav/9N8KBW01WD62?hl=en-us&gl=us&ocid=pdpshare",
+                        icon: "fluent:store-microsoft-16-filled",
+                    },
+                    {
                         text: "Github",
                         url: "https://github.com/FrozenAssassine/QuickNav",
                         icon: "mdi:github",
@@ -26,16 +31,16 @@ function ProjectsPage() {
                 imageURL="./assets/easepass_banner.png"
                 buttons={[
                     {
+                        text: "Store",
+                        url: "https://apps.microsoft.com/store/detail/ease-pass/9NQPF80923F5?hl=en-us&gl=us&ocid=pdpshare",
+                        icon: "fluent:store-microsoft-16-filled",
+                    },
+                    {
                         text: "Github",
                         url: "https://github.com/FrozenAssassine/easepass",
                         icon: "mdi:github",
                     },
                     { text: "Website", url: "http://easepass.frozenassassine.de/", icon: "iconoir:internet" },
-                    {
-                        text: "Store",
-                        url: "https://apps.microsoft.com/store/detail/ease-pass/9NQPF80923F5?hl=en-us&gl=us&ocid=pdpshare",
-                        icon: "fluent:store-microsoft-16-filled",
-                    },
                 ]}
                 authors={[{name: "Finn Freitag", url: "https://finnfreitag.com"}, {name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
                 tags={["C#", "WINUI3"]}
@@ -45,13 +50,13 @@ function ProjectsPage() {
                 content="Fastedit is designed to make editing and organizing your documents effortless. With the ability to open multiple tabs, multiple documents can be easily edited or viewed at once. Line numbering and custom designs are also featured to personalize your experience. Your work is saved and opens up exactly as you left it with the session snapshot feature. Additionally, editing code is made easy with syntax highlighting. Plus, important work is never lost with the ability to recover deleted files from the recycle bin. It uses TextControlBox as its core component. Through this project I learned how to handle a large codebase and how to stay patient even when I had to face many problems."
                 imageURL="./assets/fastedit_banner.jpg"
                 buttons={[
-                    { text: "Github", url: "https://github.com/FrozenAssassine/Fastedit", icon: "mdi:github" },
-                    { text: "Website", url: "http://fastedit.frozenassassine.de/", icon: "iconoir:internet" },
                     {
                         text: "Store",
                         url: "https://apps.microsoft.com/store/detail/fastedit/9NTQ53W18DPW?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab",
                         icon: "fluent:store-microsoft-16-filled",
                     },
+                    { text: "Github", url: "https://github.com/FrozenAssassine/Fastedit", icon: "mdi:github" },
+                    { text: "Website", url: "http://fastedit.frozenassassine.de/", icon: "iconoir:internet" },
                 ]}
                 authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
                 tags={["C#", "UWP"]}

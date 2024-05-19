@@ -6,12 +6,8 @@ import FriendItem from "../../components/FriendItem/FriendItem";
 function AboutPage() {
     return (
         <div className={styles.aboutpage}>
-            <div className={styles.aboutitems}>
-                <AboutItem headline="Aka" text="FrozenAssassine" />
-                <AboutItem headline="Residence" text="Germany" />
-                <AboutItem headline="Best IDE" text="VSCode" />
-                <AboutItem headline="Best Language" text="C#" />
-                <AboutItem headline="Best Framework" text="React" />
+            <div className={styles.abouttext}>
+            I am Julius, also known as FrozenAssassine. I started programming at 11 and currently live in Germany. My favorite IDE is VSCode, and I love coding in C#. React is my go-to framework. I'm passionate about building user-friendly apps and aspire to be a software engineer, AI engineer, or game designer.
             </div>
             <div className={styles.friendsheadline}>Friends</div>
             <div className={styles.friendslist}>
@@ -31,6 +27,13 @@ function AboutPage() {
                     name="Sushicat"
                     url="https://github.com/nathans-sushicat"
                     projects={[{description: "A funny game made in Java", name: "Java-Game", url: "https://github.com/Nathans-SushiCat/Java-Game"}]}
+                
+                ></FriendItem>
+                <FriendItem
+                    description="He taught me React and some Rust, a very kind person. Together we build some helpful projects to make school simpler."
+                    name="Phill"
+                    url="https://github.com/phill030"
+                    projects={[{description: "Minecraft Server Protocol implementation in Rust", name: "Enderforge", url: "https://github.com/Phill030/enderforge"}]}
                 
                 ></FriendItem>
             </div>

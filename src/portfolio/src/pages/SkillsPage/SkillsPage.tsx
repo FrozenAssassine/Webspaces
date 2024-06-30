@@ -27,7 +27,7 @@ function SkillsPage() {
             <SkillItem infotext='The coolest and most useful IDE ever made' icon="logos:visual-studio-code" headline="VSCode"></SkillItem>
             <SkillItem infotext='One of the craziest engines I ever used' icon="mdi:unreal-engine" headline="Unreal Engine"></SkillItem>
             <SkillItem infotext='A cool engine for the beginning' icon="mdi:unity" headline="Unity"></SkillItem>
-            <SkillItem infotext='The coolest 3D program with toooo many features' icon="skill-icons:blender-light" headline="Blender"></SkillItem>
+            <SkillItem infotext='Need it fast, make it parallel :D' icon="vscode-icons:file-type-cuda" headline="CUDA"></SkillItem>
         </div>
     </div>
   );

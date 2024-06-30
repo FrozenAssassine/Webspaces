@@ -17,7 +17,7 @@ function ProjectItem({ headline, imageURL, content, buttons, tags, authors }: Pr
             <div className={styles.title}>{headline}</div>
             {authors !== undefined && 
                 <div className={styles.authors}>
-                    Authors: 
+                    Author{authors.length > 1 ? "s" : ""}:
                     {authors.map((value, index) => {
                         return <a key={index} href={value.url} className={styles.author}>{value.name}</a>;
                 })}

@@ -5,6 +5,16 @@ import ProjectItem from "../../components/ProjectItem/ProjectItem";
 function ProjectsPage() {
     return (
         <div className={styles.projectspage}>
+                        <ProjectItem
+                headline="Neural Network"
+                content="This project is a neural network implementation from scratch in C# with CUDA support written in C++. It currently supports Optical Digit Recognition (ODR) trained with 60,000 images and can also perform XOR as a simple initial test. More complex image classification is in progress. I trained it with 2,000 RGB images of 150 x 150 pixels and achieved some initial results. I am very proud of the CUDA support, which was a challenging task, but with enough patience, it significantly speeds up training. Overall, this is one of the most interesting projects I have done so far, and I am committed to making it better, faster, and more efficient in learning. Through this project, I learned how CUDA works, how C++ and C# interact using DLLs, the mathematics behind neural networks, and how to write highly efficient parallel code for both CPU and GPU."
+                imageURL="./assets/neuralnetwork.jpg"
+                buttons={[
+                    { text: "Github", url: "https://github.com/FrozenAssassine/NeuralNetwork-FromScratch", icon: "mdi:github" },
+                ]}
+                authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
+                tags={["C#", "C++", "CUDA", "Neuronal Network"]}
+            ></ProjectItem>
             <ProjectItem
                 headline="QuickNav"
                 content="QuickNav is a powerful Windows tool that simplifies multitasking with just a keystroke. By pressing Windows + Y, a search window pops up, allowing users to perform various tasks such as searching the web, finding files, running commands, calculate, get file information, create timers, and much more. It aims to make using Windows more powerful and efficient. Through this project I leanred how to intereact with windows apis, such as file search and get system informations and much more."

@@ -1,0 +1,42 @@
+.travelItem{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 3em;
+    max-width: 1300px;
+    transition-duration: 300ms;
+    box-shadow: 0 0 3em var(--accentdark);
+    border: 0.3em solid var(--accentdark);
+
+    @media (max-width: 800px) { min-width: 75%; }
+    @media (max-width: 1200px) { min-width: 60%; }
+    @media (max-width: 1500px) { width: 60%; }
+}
+
+.headline{
+    font-size: 3em;
+    @media (max-width: 800px){font-size: 2em;}
+}
+
+.subheadline{
+    margin: 2em;
+    font-size: 1.5em;
+    @media (max-width: 800px){font-size: 1em;}
+}
+
+.image{
+    @media (max-width: 1500px) { width: 70%; }
+    width: 90%;
+    max-width: 70vw;
+    border-radius: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+}
+
+.imageWrapper{
+    width: 100%;
+}

@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  overflow: hidden;
+  color: white;
+  overflow-y: scroll;
+
+}
+
+:root{
+  --accent1: #b700ff;
+  --accent2: #13a9ff;
+  --accent3: #202449;
+  --background: #0b111e;
+  --textColor: #ffffff;
+  --accentdark: #202449;
+
+  /*404 Page colors*/
+  --textColor1: rgb(195, 0, 255);
+  --textColor2: rgb(0, 255, 30);
+  --textColor3: rgb(0, 204, 255);
+  --textColor4: rgb(217, 0, 255);
+}
+
+.textanimation{
+  background-image: linear-gradient(-225deg, var(--accent2) 20%, var(--accent1) 50%, var(--accent2) 80%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textanimation 5s linear infinite;
+  color: #fff;
+}
+
+@keyframes textanimation {
+  to {
+      background-position: 200% center;
+  }
+}

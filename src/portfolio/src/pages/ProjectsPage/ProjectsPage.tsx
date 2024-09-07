@@ -13,7 +13,7 @@ function ProjectsPage() {
                     { text: "Github", url: "https://github.com/FrozenAssassine/NeuralNetwork-FromScratch", icon: "mdi:github" },
                 ]}
                 authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
-                tags={["C#", "C++", "CUDA", "Neuronal Network"]}
+                tags={["C#", "C++", "CUDA", "Neuronal Network", "AI"]}
             ></ProjectItem>
             <ProjectItem
                 headline="QuickNav"
@@ -32,12 +32,12 @@ function ProjectsPage() {
                     },
                     { text: "Website", url: "http://quicknav.frozenassassine.de/", icon: "iconoir:internet" },
                 ]}
-                tags={["C#", "WinUI3", "Windows"]}
+                tags={["C#", "WinUI3", "Windows", "Poweruser", "Utility"]}
                 authors={[{name: "Finn Freitag", url: "https://finnfreitag.com"}, {name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
             ></ProjectItem>
                         <ProjectItem
                 headline="Ease Pass"
-                content="Ease Pass is a simple password manager designed to streamline password management. With this application, you can conveniently store, edit, and organize your passwords securely. The project is a work in progress, focusing on providing a user-friendly interface to save and manage passwords, and future enhancements are underway to further enhance its capabilities. Through this project, I learned about secure data management and encryption techniques."
+                content="Ease Pass is a straightforward yet powerful password manager that makes managing your passwords easy and intuitive. With Ease Pass, you can securely store, edit, and organize all your passwords in one place. The app focuses on ease of use while keeping your data safe and accessible whenever you need it. Whether you're generating strong passwords, organizing your existing ones, or importing them from other sources, Ease Pass has you covered. Through this project, I learned about secure data management and encryption techniques."
                 imageURL="./assets/easepass_banner.png"
                 buttons={[
                     {
@@ -53,7 +53,7 @@ function ProjectsPage() {
                     { text: "Website", url: "http://easepass.frozenassassine.de/", icon: "iconoir:internet" },
                 ]}
                 authors={[{name: "Finn Freitag", url: "https://finnfreitag.com"}, {name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
-                tags={["C#", "WINUI3"]}
+                tags={["C#", "WINUI3", "Security", "Password Manager"]}
             ></ProjectItem>
             <ProjectItem
                 headline="Fastedit"
@@ -69,7 +69,7 @@ function ProjectsPage() {
                     { text: "Website", url: "http://fastedit.frozenassassine.de/", icon: "iconoir:internet" },
                 ]}
                 authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
-                tags={["C#", "UWP"]}
+                tags={["C#", "UWP", "Texteditor"]}
             ></ProjectItem>
             <ProjectItem
                 headline="TextControlBox"
@@ -88,7 +88,7 @@ function ProjectsPage() {
                     },
                 ]}
                 authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
-                tags={["C#", "UWP"]}
+                tags={["C#", "UWP", "Textbox", "Syntaxhighlighting", "Linenumbering"]}
             ></ProjectItem>
             <ProjectItem
                 headline="Voice Assistant"
@@ -98,7 +98,7 @@ function ProjectsPage() {
                     { text: "Github", url: "https://github.com/FrozenAssassine/VoiceAssistant", icon: "mdi:github" },
                 ]}
                 authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
-                tags={["Python", "Neuronal Network"]}
+                tags={["Python", "Neural Network"]}
             ></ProjectItem>
             <ProjectItem
                 headline="Juli"

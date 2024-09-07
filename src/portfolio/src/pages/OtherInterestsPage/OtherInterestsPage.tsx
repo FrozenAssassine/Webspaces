@@ -23,6 +23,29 @@ export default function OtherInterestsPage(){
                         </a>
                     </div>
                 </InterestsItem>
+                <InterestsItem 
+                name='Photography'
+                image='./assets/photography1.jpg'
+                text="One of my passions is photography. There's an incredible feeling of freedom and creativity that comes with capturing moments and perspectives that often go unnoticed. Each shot tells its own story."
+                buttons={[
+                ]}>
+                    <div className={styles.droneVideoHeadline}>Images</div>
+
+                    <div className={styles.dronevideolist}>
+                        <div className={styles.dronevideo}>
+                            <img className={styles.dronevideoimage} src="./assets/photography2.png"/>
+                        </div>
+                        <div className={styles.dronevideo}>
+                            <img className={styles.dronevideoimage} src="./assets/photography3.jpg"/>
+                        </div>
+                        <div className={styles.dronevideo}>
+                            <img className={styles.dronevideoimage} src="./assets/photography4.jpg"/>
+                        </div>
+                        <div className={styles.dronevideo}>
+                            <img className={styles.dronevideoimage} src="./assets/photography5.jpg"/>
+                        </div>
+                    </div>
+                </InterestsItem>
         </div>
     );
 }

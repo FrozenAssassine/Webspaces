@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  overflow: hidden;
+  color: black;
+  overflow-y: scroll;
+
+}
+
+:root{
+  --accent1: #b700ff;
+  --accent2: #13a9ff;
+  --accent3: #202449;
+  --background: #f1f1f1;
+  --textColor: #ffffff;
+  --accentdark: #202449;
+
+  /*404 Page colors*/
+  --textColor1: rgb(195, 0, 255);
+  --textColor2: rgb(0, 255, 30);
+  --textColor3: rgb(0, 204, 255);
+  --textColor4: rgb(217, 0, 255);
+}

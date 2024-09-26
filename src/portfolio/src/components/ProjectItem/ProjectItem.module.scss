@@ -112,6 +112,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
@@ -122,6 +123,8 @@
     border: 0.15em solid gray;
     color: gray;
     font-size: 0.8em;
+
+    @media (max-width: 500px) { font-size: .6em;}
 }
 
 .authors{
@@ -129,6 +132,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     font-size: 1.2em;
 }

@@ -18,7 +18,7 @@ function AboutPage() {
                     projects={[{description: "A very advanced calculator", name: "Calculator", url: "https://finnfreitag.com/tools/calculator"}]}
                 ></FriendItem>
                 <FriendItem
-                    description="Most of the time we build funny stuff with Arduino or ESP together"
+                    description="We love doing things together, whether it's working with Arduino, flying drones, programming, exploring electronics, or photography -pretty much everything!"
                     name="Sna8xs"
                     url="https://github.com/sna8xs"
                 ></FriendItem>

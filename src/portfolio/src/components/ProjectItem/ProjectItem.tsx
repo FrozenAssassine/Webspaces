@@ -9,9 +9,10 @@ type Props = {
     buttons: { text: string; url: string, icon: string }[];
     tags: string[];
     authors?: {name: string, url: string}[];
+    small_image?: boolean
 };
 
-function ProjectItem({ headline, imageURL, content, buttons, tags, authors }: Props) {
+function ProjectItem({ headline, imageURL, content, buttons, tags, authors, small_image }: Props) {
     return (
         <div className={styles.projectitem}>
             <div className={styles.title}>{headline}</div>
@@ -23,7 +24,7 @@ function ProjectItem({ headline, imageURL, content, buttons, tags, authors }: Pr
                 })}
                 </div>
             }
-            <img src={imageURL} className={styles.image} />
+            <img src={imageURL} className={`${small_image ? styles.small_image : ''} ${styles.image}`} />
 
             <div className={styles.tags}>
                 {tags.map((value, index) => {

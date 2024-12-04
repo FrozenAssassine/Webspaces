@@ -7,23 +7,27 @@
     padding: 1em;
     border-radius: 1em;
     margin: 3em;
-    max-width: 1300px;
     transition-duration: 300ms;
     box-shadow: 0 0 3em var(--accentdark);
     border: 0.3em solid var(--accentdark);
-
+    
+    max-width: 1300px;
     @media (max-width: 800px) { min-width: 75%; }
     @media (max-width: 1200px) { min-width: 60%; }
     @media (max-width: 1500px) { width: 60%; }
 }
 
 .image{
-    @media (max-width: 1500px) { width: 70%; }
-    width: 90%;
-    max-width: 70vw;
+    @media (max-width: 1500px) { width: 90%; }
+    width: 65%;
     border-radius: 1em;
     margin-top: 0.7em;
     margin-bottom: 1em;
+}
+    
+.small_image{
+    max-height: 400px;
+    max-width: 400px;
 }
 
 .content{

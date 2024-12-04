@@ -1,0 +1,143 @@
+.projectitem{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .4em;
+    border-radius: 1em;
+    margin: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    // max-width: 600px;
+    transition-duration: 300ms;
+    box-shadow: 0 0 3em var(--accentdark);
+    border: 0.3em solid var(--accentdark);
+
+    max-width: 1000px;
+    @media (max-width: 800px) { min-width: 75%; }
+    @media (max-width: 1200px) { min-width: 60%; }
+    @media (max-width: 1500px) { width: 60%; }
+}
+
+.content{
+    margin-top: 1em;
+    width: 90%;
+    text-align: justify;
+    font-size: 1.0em;
+    @media (max-width: 800px) { font-size: 0.8em;}
+}
+
+.title{
+    font-size: 2.2em;
+    @media (max-width: 800px){font-size: 1.6em;}
+}
+
+.buttons{
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media (max-width: 800px){max-width: 80%;}
+}
+
+.button{
+    font-size: 1.1em;
+    border: 0.15em solid white;
+    border-radius: 1em;
+    margin: .5em;
+    padding: 0.1em .5em 0.1em .5em;
+    cursor: pointer;
+    min-width: 5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition-duration: 300ms;
+    
+    @media (max-width: 800px) { margin: 0.2em; font-size: 0.8em; }
+
+    &:hover{
+        background-image: linear-gradient(-225deg, var(--accent2) 20%, var(--accent1) 50%, var(--accent2) 80%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        animation: textanimation 5s linear infinite;
+        color: #fff;
+    }
+    & div{
+        transition-duration: .5s;
+    }
+    &:hover div{
+        margin-left: -1em;
+    }
+    &:hover .icon{
+        opacity: 1;
+        margin-right: -1em;
+    }
+}
+
+
+@keyframes textanimation {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+.icon{
+    margin-left: 0.5em;
+    width: 1.5em;
+    height: auto;
+    opacity: 0;
+    margin-right: -2em;
+    transition-duration: .5s;
+    transition-delay: 100ms;
+}
+
+
+.tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.tag{
+    margin: 0.2em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    border-radius: 1em;
+    border: 0.15em solid gray;
+    color: gray;
+    font-size: 0.6em;
+
+    @media (max-width: 500px) { font-size: .5em;}
+}
+
+.authors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 1.1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.author{
+    color: gray;
+    text-decoration: none; 
+    transition-duration: .2s;
+    &:hover{
+        color: var(--accent2);
+    }
+}

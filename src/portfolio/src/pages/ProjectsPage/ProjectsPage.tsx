@@ -1,11 +1,24 @@
 import React from "react";
 import styles from "./ProjectsPage.module.scss";
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import ProjectItemSmall from "../../components/ProjectItem/ProjectItemSmall";
+import { TRUE } from "sass";
 
 function ProjectsPage() {
     return (
         <div className={styles.projectspage}>
-                        <ProjectItem
+            <ProjectItem
+                headline="Ultimate Runner"
+                content="Our 2D endless runner brings something fresh to the genre with a variety of level types, like running through deserts, flying through skies, and swinging through challenging points, each offering its own unique gameplay. Players can collect coins, gems, and revivers to unlock skins, mystery boxes, and extra lives, with customizations that match each level. Mystery boxes add a fun layer of surprise, rewarding players with skins or in-game currency to keep things exciting. Creating this game has been a rewarding journey. It taught me how to use C# in Unity, develop complex game mechanics, publish on the Play Store, work with testers, gather their feedback, and successfully deploy the game."
+                imageURL="./assets/ultimate-runner-icon.png"
+                buttons={[
+                    { text: "Play Store", url: "https://play.google.com/store/apps/details?id=com.FrozenCatStudios.UltimateRunner&pli=1", icon: "lineicons:play-store" },
+                ]}
+                authors={[{name: "SuhiCat", url: "https://github.com/Nathans-Sushicat"}, {name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
+                tags={["C#", "Unity", "Game", "2D"]}
+                small_image={true}
+            ></ProjectItem>
+            <ProjectItem
                 headline="Neural Network"
                 content="This project is a neural network implementation from scratch in C# with CUDA support written in C++. It currently supports Optical Digit Recognition (ODR) trained with 60,000 images and can also perform XOR as a simple initial test. More complex image classification is in progress. I trained it with 2,000 RGB images of 150 x 150 pixels and achieved some initial results. I am very proud of the CUDA support, which was a challenging task, but with enough patience, it significantly speeds up training. Overall, this is one of the most interesting projects I have done so far, and I am committed to making it better, faster, and more efficient in learning. Through this project, I learned how CUDA works, how C++ and C# interact using DLLs, the mathematics behind neural networks, and how to write highly efficient parallel code for both CPU and GPU."
                 imageURL="./assets/neuralnetwork.jpg"
@@ -90,20 +103,22 @@ function ProjectsPage() {
                 authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
                 tags={["C#", "UWP", "Textbox", "Syntaxhighlighting", "Linenumbering"]}
             ></ProjectItem>
-            <ProjectItem
+            {/* <div className={styles.smallProjectItems}>
+
+            <ProjectItemSmall
                 headline="Voice Assistant"
                 content="This project is a voice assistant that can perform various tasks such as saying the time, searching Wikipedia, telling jokes and telling the date. It works by using speech recognition to convert audio into text and then processing that text to determine what action to take. The assistant uses several Python libraries including SpeechRecognition, PyAudio, pyttsx3, and NLTK. Through this project, I learned how to use machine learning algorithms to create intelligent applications that can understand natural language and perform tasks based on the given input."
-                imageURL="./assets/voiceassistant_banner.jpg"
+                // imageURL="./assets/voiceassistant_banner.jpg"
                 buttons={[
                     { text: "Github", url: "https://github.com/FrozenAssassine/VoiceAssistant", icon: "mdi:github" },
                 ]}
                 authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
                 tags={["Python", "Neural Network"]}
-            ></ProjectItem>
-            <ProjectItem
+                ></ProjectItemSmall>
+            <ProjectItemSmall
                 headline="Juli"
                 content="Juli is my own programming language. It is an interpreted language that follows the syntax of Python in some ways. Juli has three main components: a lexer, a parser, and an interpreter. The lexer takes the source code and converts it into tokens, which are then passed to the parser. The parser understands the structure described by the tokens and builds them into a syntax tree. Finally, the interpreter uses the syntax tree to execute the program. Through this project I learned how a programming language works and how the process from written code to actual instructions works."
-                imageURL="./assets/juli_banner.jpg"
+                // imageURL="./assets/juli_banner.jpg"
                 buttons={[
                     {
                         text: "Github",
@@ -113,7 +128,9 @@ function ProjectsPage() {
                 ]}
                 authors={[{name: "Julius Kirsch", url: "https://frozenassassine.de"}]}
                 tags={["C#", "Console", "Programming language"]}
-            ></ProjectItem>
+                ></ProjectItemSmall>
+
+                </div> */}
         </div>
     );
 }

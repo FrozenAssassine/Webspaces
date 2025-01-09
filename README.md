@@ -1,6 +1,7 @@
 # Webspaces
 All my websites in one repository
 
+❗ This project does not represent my websites anymore. I am now using nextjs which bundels all of my websites including the webserver so I don't want to publish the code anymore!
 
 ## Demo
 - <a href="http://frozenassassine.de">Portfolio</a>
